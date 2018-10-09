@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>WEATHER TODAY</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.5&key=efab2ef60289066fd71858f404a71411&plugin=AMap.CitySearch"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+
+	<!-- 引入在线字体图标css -->
+	<!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css"> -->
+
+	<!-- 引入本地字体图标css -->
+	<link href="lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main-css.css">
+</head>
+<body>
+	<div class="box">
+		<div class="inner-sup">
+			<label class='search-ico fa fa-search'></label>
+			<input type="text" class="search" placeholder='    点此查询天气'>
+			<div class="city">天气查询中,请稍后</div>
+			<div class="location ">
+				<p class='map fa fa-map-marker'></p>
+				<!-- <p class='map fa fa-refresh fa-spin'></p> -->
+				<p class='loaction-city'>定位中</p>
+				<p class='location-time'>00:00 AM</p>
+			</div>
+			<div class="refeash">当前城市&nbsp;&nbsp;&nbsp;
+				<p class='fa fa-street-view'></p>
+			</div>
+		</div>
+
+		<div class="inner-sub">
+			<!-- 今天天气 -->
+			<div class="weather today">
+				<div class="left">0°</div>
+				<div class="left-sub">星期一 00月00日</div>
+				
+				<div class="right">
+						<div class="right-top"></div>
+						<div class="right-sub">查询中</div>
+				</div>
+			</div>
+
+			<!-- 未来第1天天气 -->
+			<div class="weather future">
+				<div class="future-top">星期二</div>
+				<div class="future-middle"></div>
+				<div class="future-sub">查询中 0°</div>
+			</div>
+
+			<!-- 未来第2天天气 -->
+			<div class="weather future">
+				<div class="future-top">星期三</div>
+				<div class="future-middle"></div>
+				<div class="future-sub">查询中 0°</div>
+			</div>
+			
+			<!-- 未来第3天天气 -->
+			<div class="weather future">
+				<div class="future-top">星期四</div>
+				<div class="future-middle"></div>
+				<div class="future-sub">查询中 0°</div>
+			</div>
+			
+			<!-- 未来第4天天气 -->
+			<div class="weather future">
+				<div class="future-top">星期五</div>
+				<div class="future-middle"></div>
+				<div class="future-sub">查询中 0°</div>
+			</div>
+			
+			<!-- 未来第5天天气 -->
+			<div class="weather future">
+				<div class="future-top">星期六</div>
+				<div class="future-middle"></div>
+				<div class="future-sub">查询中 0°</div>
+			</div>
+			
+			<!-- 未来第6天天气 -->
+			<div class="weather future">
+				<div class="future-top">星期天</div>
+				<div class="future-middle"></div>
+				<div class="future-sub">查询中 0°</div>
+			</div>
+		</div>
+		<div class="inner-sub-bg"></div>
+	</div>
+	<!-- 引入在线json2.js -->
+	<!-- <script src='https://cdn.bootcss.com/json2/20160511/json2.js'></script> -->
+	<!-- 引入本地json文件 -->
+	<script src='lib/JSON.js'></script>
+	<!-- 引入城市代码 -->
+	<script src='lib/city.js'></script>
+	<script src='js/main-js.js'></script>
+</body>
+</html>
